@@ -47,3 +47,9 @@
 .productsList {
   margin-top: 30px;
 }
+
+@media screen and (max-width: 640px) {
+  .title {
+    grid-template-columns: auto 1fr;
+  }
+}

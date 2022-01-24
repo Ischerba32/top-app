@@ -79,4 +79,12 @@
     grid-template-columns: [start] 1fr [end];
   }
 
+  .reviewForm input {
+    width: 100%;
+  }
+
+  .rating {
+    padding: 10px 0;
+  }
+
 }

@@ -121,7 +121,7 @@
 }
 
 .advantages {
-  border-left: 2px solid var(--green);
+  border-left: 2px solid #1DC37E;
   padding-left: 15px;
   margin-bottom: 20px;
 }
@@ -146,16 +146,17 @@
   margin-bottom: 5px;
 }
 
-
-.closed {
+.reviews {
   overflow: hidden;
-  max-height: 0;
-  padding: 0;
+  padding: 30px;
 }
 
 .opened {
-  max-height: unset;
-  padding: 30px;
+  height: auto;
+}
+
+.closed {
+  height: 0;
 }
 
 .rateTitle a {
@@ -261,16 +262,24 @@
       "actions actions actions";
   }
 
-  .price {
+  .title {
     margin-bottom: 10px;
   }
 
-  .credit {
+  .priceTitle {
     margin-bottom: 10px;
   }
 
-  .rating {
+  .creditTitle {
     margin-bottom: 10px;
+  }
+
+  .rateTitle {
+    margin-bottom: 10px;
+  }
+
+  .characteristics {
+    padding-right: 0;
   }
 }
 

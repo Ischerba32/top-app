@@ -2,6 +2,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+
 	color: var(--black);
 	background: var(--background);
 
@@ -16,14 +17,17 @@ a {
 
 * {
 	box-sizing: border-box;
+
 	outline-color: var(--primary);
 }
 
 .visuallyHidden {
+	position: absolute;
+
+	overflow: hidden;
+
 	width: 0;
 	height: 0;
-	overflow: hidden;
-	position: absolute;
 }
 
 :root {
@@ -36,9 +40,9 @@ a {
 	--primary-hover: #6344DF;
 	--red: #FC836D;
 	--red-light: #FEA291;
-	--red-alert: #c3431c;
+	--red-alert: #C3431C;
 	--green: #007B48;
 	--green-light: #C8F8E4;
 	--background: #F5F6F8;
-	--font-family: Noto Sans Display, sans-serif;
+	--font-family: noto sans display, sans-serif;
 }

@@ -3,7 +3,7 @@ import styles from './Search.module.css';
 import cn from 'classnames';
 import { Input } from '../Input/Input';
 import { Button } from '../Button/Button';
-import { useState } from 'react';
+import { KeyboardEvent, useState } from 'react';
 import SearchIcon from './search.svg';
 import { useRouter } from 'next/router';
 
@@ -29,7 +29,7 @@ export const Search = ({className, ...props}: SearchProps): JSX.Element => {
 
 
   return (
-    <div className={cn(className, styles.search)} {...props}>
+    <form className={cn(className, styles.search)} {...props} role="search">
       <Input
         placeholder='Поиск...'
         className={styles.input}
@@ -41,9 +41,10 @@ export const Search = ({className, ...props}: SearchProps): JSX.Element => {
         appearance='primary'
         className={styles.button}
         onClick={goToSearch}
+        aria-label="Найти на сайте"
       >
         <SearchIcon />
       </Button>
-    </div>
+    </form>
   );
 };

@@ -8,8 +8,7 @@ import { API } from "../helpers/api";
 function Search(): JSX.Element {
   return (
     <>
-      Search
-
+      Результаты поиска:
     </>
   );
 }

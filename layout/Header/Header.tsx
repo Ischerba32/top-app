@@ -8,6 +8,7 @@ import { Sidebar } from '../Sidebar/Sidebar';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useReducedMotion} from 'framer-motion';
+import Link from 'next/link';
 
 
 export const Header = ({className, ...props}: HeaderProps): JSX.Element => {
@@ -37,7 +38,11 @@ export const Header = ({className, ...props}: HeaderProps): JSX.Element => {
     <header className={cn(className, styles.header)}
       {...props}
     >
-      <Logo />
+      <Link href='/'>
+        <a>
+          <Logo />
+        </a>
+      </Link>
       <ButtonIcon
         appearance='white'
         icon='menu'

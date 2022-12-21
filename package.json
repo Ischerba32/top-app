@@ -8,8 +8,7 @@
     "debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "stylelint": "stylelint \"**/*.css\" --fix"
+    "lint": "next lint"
   },
   "dependencies": {
     "axios": "^0.24.0",
